@@ -1,6 +1,6 @@
 # Codeloo 🤖
 
-**Designed by Thayyib · Powered by RIZTHA** — free for everyone, Malayalam & English.
+**Designed by Thayyib Haneefa Rasheeda and powered by RIZTHA** — free for everyone, Malayalam & English.
 
 കുട്ടികൾക്കുള്ള സൗജന്യ കോഡിംഗ് സാഹസിക ഗെയിം (മലയാളം / English). കുട്ടി ബ്ലോക്കുകൾ ക്രമീകരിച്ച് പ്രോഗ്രാം ഉണ്ടാക്കും, ▶️ അമർത്തും, റോബോ ആ പ്രോഗ്രാം അനുസരിച്ച് നീങ്ങും.
 

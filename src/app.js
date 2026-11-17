@@ -1,4 +1,4 @@
-/* Codeloo 🤖 — kids coding adventure. Designed by Thayyib · Powered by RIZTHA. Vanilla JS, no backend, no tracking. */
+/* Codeloo 🤖 — kids coding adventure. Designed by Thayyib Haneefa Rasheeda and powered by RIZTHA. Vanilla JS, no backend, no tracking. */
 'use strict';
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -112,7 +112,7 @@ const LG = () => (typeof S !== 'undefined' && S && S.lang) || 'ml';
 const T = (m, e) => LG() === 'en' ? e : m;
 const tx = v => Array.isArray(v) ? (LG() === 'en' ? v[1] : v[0]) : v;
 const kidName = () => (S.childName && S.childName.trim()) || T('കൂട്ടുകാരാ', 'friend');
-const CREDIT = 'Designed by <b>Thayyib</b> · Powered by <b>RIZTHA</b>';
+const CREDIT = 'Designed by <b>Thayyib Haneefa Rasheeda</b> and powered by <b>RIZTHA</b>';
 function wTitle(W) { return T(W.title, W.en); }
 function dTitle(W, d) { if (d === 5) return T(W.days[4].t, W.days[4].grad ? 'Graduation 🎓' : 'Test Mission 🏅'); return T(W.days[d - 1].t, EN_W[W.w - 1].days[d - 1][0]); }
 function dLearn(W, d) { if (d === 5) return T(ASSESS_LEARN, ASSESS_EN); return T(W.days[d - 1].learn, EN_W[W.w - 1].days[d - 1][1]); }

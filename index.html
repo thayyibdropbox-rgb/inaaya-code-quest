@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Codeloo 🤖 – Learn to code by playing</title>
-<meta name="description" content="Codeloo – free coding adventure game for kids in Malayalam and English. Designed by Thayyib · Powered by RIZTHA">
-<meta name="author" content="Designed by Thayyib · Powered by RIZTHA">
+<meta name="description" content="Codeloo – free coding adventure game for kids in Malayalam and English. Designed by Thayyib Haneefa Rasheeda and powered by RIZTHA">
+<meta name="author" content="Designed by Thayyib Haneefa Rasheeda and powered by RIZTHA">
 <meta name="theme-color" content="#62cdf5">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
@@ -231,7 +231,7 @@ details{background:#fff;border-radius:10px;padding:8px;margin:6px 0}
 <div id="app"></div><div id="modals"></div><div id="toasts"></div>
 <noscript>Codeloo needs JavaScript. ഈ ഗെയിം കളിക്കാൻ JavaScript ഓൺ ചെയ്യണം.</noscript>
 <script>
-/* Codeloo 🤖 — kids coding adventure. Designed by Thayyib · Powered by RIZTHA. Vanilla JS, no backend, no tracking. */
+/* Codeloo 🤖 — kids coding adventure. Designed by Thayyib Haneefa Rasheeda and powered by RIZTHA. Vanilla JS, no backend, no tracking. */
 'use strict';
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -345,7 +345,7 @@ const LG = () => (typeof S !== 'undefined' && S && S.lang) || 'ml';
 const T = (m, e) => LG() === 'en' ? e : m;
 const tx = v => Array.isArray(v) ? (LG() === 'en' ? v[1] : v[0]) : v;
 const kidName = () => (S.childName && S.childName.trim()) || T('കൂട്ടുകാരാ', 'friend');
-const CREDIT = 'Designed by <b>Thayyib</b> · Powered by <b>RIZTHA</b>';
+const CREDIT = 'Designed by <b>Thayyib Haneefa Rasheeda</b> and powered by <b>RIZTHA</b>';
 function wTitle(W) { return T(W.title, W.en); }
 function dTitle(W, d) { if (d === 5) return T(W.days[4].t, W.days[4].grad ? 'Graduation 🎓' : 'Test Mission 🏅'); return T(W.days[d - 1].t, EN_W[W.w - 1].days[d - 1][0]); }
 function dLearn(W, d) { if (d === 5) return T(ASSESS_LEARN, ASSESS_EN); return T(W.days[d - 1].learn, EN_W[W.w - 1].days[d - 1][1]); }
