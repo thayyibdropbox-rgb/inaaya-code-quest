@@ -1,7 +1,7 @@
 {
- "name": "INAAYA – THE CODE QUEST",
- "short_name": "Code Quest",
- "description": "Malayalam coding adventure game for kids",
+ "name": "Codeloo",
+ "short_name": "Codeloo",
+ "description": "Free coding adventure game for kids – Malayalam & English. Designed by Thayyib · Powered by RIZTHA",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
