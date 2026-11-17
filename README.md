@@ -1,5 +1,7 @@
 # INAAYA – THE CODE QUEST 🚀
 
+**Designed by Thayyib Haneefa · Powered by RIZTHA Technologies & Innovations**
+
 ഇനായയ്ക്ക് വേണ്ടിയുള്ള മലയാളം കോഡിംഗ് സാഹസിക ഗെയിം. കുട്ടി ബ്ലോക്കുകൾ ക്രമീകരിച്ച് പ്രോഗ്രാം ഉണ്ടാക്കും, ▶️ അമർത്തും, റോബോ ആ പ്രോഗ്രാം അനുസരിച്ച് നീങ്ങും.
 
 A free, standalone Malayalam coding adventure game for children aged 6 and up. It has no backend, no login, no ads, no tracking and no AI or paid APIs. Everything runs in the browser.

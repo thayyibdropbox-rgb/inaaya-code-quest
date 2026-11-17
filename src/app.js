@@ -543,6 +543,7 @@ function home() {
   <button class="btn big primary" data-go="day:${n.w}:${n.d}">▶️ ഇന്നത്തെ പാഠം<small>ആഴ്ച ${n.w} · ദിവസം ${n.d} · ${wd.icon} ${wd.name}</small></button>
   <div class="row2"><button class="btn big" data-go="map">🗺️ ലോക ഭൂപടം</button><button class="btn big" data-go="games">🎨 എന്റെ ഗെയിമുകൾ</button></div>
   <div class="progress-line">പൂർത്തിയാക്കിയ പാഠങ്ങൾ: <b>${doneCount}/60</b> ${S.graduated ? '· 🎓 ബിരുദം നേടി!' : ''}</div>
+  <div class="credit">Designed by <b>Thayyib Haneefa</b> · Powered by <b>RIZTHA Technologies &amp; Innovations</b></div>
   <button class="btn small ghost" id="musicBtn">${S.music ? '🎵 സംഗീതം: ഓൺ' : '🎵 സംഗീതം: ഓഫ്'}</button>
   </div>`);
   updateTimerUI();
@@ -985,7 +986,7 @@ async function graduation() {
 }
 function showCertificate() {
   const skills = Object.keys(SKILLS).map(k => { const s = skillStatus(k); return `<li>${STATUS[s.st][2]} ${SKILLS[k][0]} – ${SKILLS[k][1]}</li>`; }).join('');
-  show('cert', topbar('home', '🎓 സർട്ടിഫിക്കറ്റ്') + `<div class="cert" id="certBox"><div class="cert-in"><div class="cert-robo">${ROBO}</div><h1>🎓 ബിരുദ സർട്ടിഫിക്കറ്റ്</h1><p>Certificate of Graduation</p><h2>${esc(S.childName)}</h2><p>INAAYA – THE CODE QUEST-ന്റെ 12 ആഴ്ചത്തെ കോഡിംഗ് യാത്ര വിജയകരമായി പൂർത്തിയാക്കി!</p><p class="big-quote">"അച്ഛാ, ഞാൻ സ്വന്തമായി ഒരു ഗെയിം ഉണ്ടാക്കി!"</p><ul class="cert-sk">${skills}</ul><p>🎮 ഉണ്ടാക്കിയ ഗെയിമുകൾ: ${S.games.length} · ⭐ ${S.stars} · 🪙 ${S.coins}</p><p>${new Date(S.graduated || Date.now()).toLocaleDateString('ml-IN')}</p></div></div><div class="center"><button class="btn primary" onclick="window.print()">🖨️ പ്രിന്റ് ചെയ്യാം</button></div>`);
+  show('cert', topbar('home', '🎓 സർട്ടിഫിക്കറ്റ്') + `<div class="cert" id="certBox"><div class="cert-in"><div class="cert-robo">${ROBO}</div><h1>🎓 ബിരുദ സർട്ടിഫിക്കറ്റ്</h1><p>Certificate of Graduation</p><h2>${esc(S.childName)}</h2><p>INAAYA – THE CODE QUEST-ന്റെ 12 ആഴ്ചത്തെ കോഡിംഗ് യാത്ര വിജയകരമായി പൂർത്തിയാക്കി!</p><p class="big-quote">"അച്ഛാ, ഞാൻ സ്വന്തമായി ഒരു ഗെയിം ഉണ്ടാക്കി!"</p><ul class="cert-sk">${skills}</ul><p>🎮 ഉണ്ടാക്കിയ ഗെയിമുകൾ: ${S.games.length} · ⭐ ${S.stars} · 🪙 ${S.coins}</p><p>${new Date(S.graduated || Date.now()).toLocaleDateString('ml-IN')}</p><p class="credit">Designed by Thayyib Haneefa · Powered by RIZTHA Technologies &amp; Innovations</p></div></div><div class="center"><button class="btn primary" onclick="window.print()">🖨️ പ്രിന്റ് ചെയ്യാം</button></div>`);
 }
 
 /* ================= PARENT AREA ================= */
@@ -1055,7 +1056,7 @@ function dashboard(tab) {
     <div class="set"><label><input type="checkbox" id="unlockAll" ${S.unlockAll ? 'checked' : ''}> Unlock all days (parent/testing mode)</label></div>
     <div class="set"><button class="btn" id="chgPin">🔑 Change PIN</button> ${S.graduated ? '<button class="btn" id="certBtn">🎓 Certificate</button>' : ''}</div>
     <div class="set danger-zone"><button class="btn danger" id="resetBtn2">🗑️ Reset all progress</button></div>
-    <p class="muted">Privacy: no ads, no accounts, no tracking, no AI services, no network calls. Everything stays on this device.</p>`;
+    <p class="muted">Designed by Thayyib Haneefa · Powered by RIZTHA Technologies &amp; Innovations</p><p class="muted">Privacy: no ads, no accounts, no tracking, no AI services, no network calls. Everything stays on this device.</p>`;
   }
   h += `</div><div id="report" class="report"></div>`;
   show('parent', h);
